@@ -88,6 +88,8 @@ const user1: UserInterface = {
   name: "John",
 };
 
+// user1.id = 5; // error
+
 // console.log(user1);
 
 // Interfaces with functions
