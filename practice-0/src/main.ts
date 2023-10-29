@@ -123,6 +123,33 @@ class Person implements PersonInterface {
 const brain = new Person(425728, "Brain Ambani");
 const mike = new Person(63739, "Mike Jordan");
 
-console.log(brain.register());
+// console.log(brain.register());
 
 // Subclasses
+
+class Employee extends Person {
+  position: string;
+
+  constructor(id: number, name: string, position: string) {
+    super(id, name);
+    this.position = position;
+  }
+}
+
+const emp = new Employee(4354543, "Shawn", "Developer");
+
+// console.log(emp.register());
+
+// Generics - reusable components
+
+function getArray<T>(items: T[]): T[] {
+  return new Array().concat(items);
+}
+
+let numArray = getArray<number>([1, 2, 3, 4]);
+let strArray = getArray<string>(["John", "Brain", "Jill"]);
+
+// numArray.push("Hello"); // error
+// strArray.push(1); // error
+
+// console.log(numArray);

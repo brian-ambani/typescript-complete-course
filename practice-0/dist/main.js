@@ -69,5 +69,22 @@ class Person {
 }
 const brain = new Person(425728, "Brain Ambani");
 const mike = new Person(63739, "Mike Jordan");
-console.log(brain.register());
+// console.log(brain.register());
 // Subclasses
+class Employee extends Person {
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const emp = new Employee(4354543, "Shawn", "Developer");
+// console.log(emp.register());
+// Generics - reusable components
+function getArray(items) {
+    return new Array().concat(items);
+}
+let numArray = getArray([1, 2, 3, 4]);
+let strArray = getArray(["John", "Brain", "Jill"]);
+// numArray.push("Hello"); // error
+// strArray.push(1); // error
+// console.log(numArray);
