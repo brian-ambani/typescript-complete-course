@@ -66,4 +66,11 @@ function addNum(x: number, y: number): number {
   return x + y;
 }
 
-console.log(addNum(1, 2));
+// console.log(addNum(1, 2));
+
+// Void
+function log(message: string | number): void {
+  console.log(message);
+}
+
+// Interfaces

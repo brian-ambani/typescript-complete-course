@@ -48,4 +48,9 @@ let customerId = cid;
 function addNum(x, y) {
     return x + y;
 }
-console.log(addNum(1, 2));
+// console.log(addNum(1, 2));
+// Void
+function log(message) {
+    console.log(message);
+}
+// Interfaces
