@@ -53,4 +53,8 @@ function addNum(x, y) {
 function log(message) {
     console.log(message);
 }
-// Interfaces
+const user1 = {
+    id: 1,
+    name: "John",
+};
+const add = (x, y) => x + y;
