@@ -45,7 +45,7 @@ enum Direction2 {
 
 // Objects
 type User = {
-  id: number;
+  readonly id: number;
   name: string;
 };
 
@@ -53,6 +53,8 @@ const user: User = {
   id: 1,
   name: "John",
 };
+
+// user.id = 5; // error
 
 // console.log(user);
 
