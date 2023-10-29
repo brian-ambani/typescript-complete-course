@@ -58,3 +58,13 @@ const user1 = {
     name: "John",
 };
 const add = (x, y) => x + y;
+// console.log(add(1, 2));
+// Classes
+class Person {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+const brain = new Person(1, "Brain Ambani");
+const mike = new Person(2, "Mike Jordan");
