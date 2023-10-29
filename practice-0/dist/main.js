@@ -39,6 +39,7 @@ const user = {
     id: 1,
     name: "John",
 };
+// user.id = 5; // error
 // console.log(user);
 // Type Assertion
 let cid = 1;
@@ -57,6 +58,8 @@ const user1 = {
     id: 1,
     name: "John",
 };
+// user1.id = 5; // error
+console.log(user1);
 const add = (x, y) => x + y;
 class Person {
     constructor(id, name) {
