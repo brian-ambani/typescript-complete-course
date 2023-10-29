@@ -100,7 +100,13 @@ const add: MathFunc = (x: number, y: number): number => x + y;
 
 // Classes
 
-class Person {
+interface PersonInterface {
+  id: number;
+  name: string;
+  register(): string;
+}
+
+class Person implements PersonInterface {
   id: number;
   name: string;
 
@@ -108,7 +114,15 @@ class Person {
     this.id = id;
     this.name = name;
   }
+
+  register() {
+    return `${this.name} of id ${this.id} is now registered`;
+  }
 }
 
-const brain = new Person(1, "Brain Ambani");
-const mike = new Person(2, "Mike Jordan");
+const brain = new Person(425728, "Brain Ambani");
+const mike = new Person(63739, "Mike Jordan");
+
+console.log(brain.register());
+
+// Subclasses
