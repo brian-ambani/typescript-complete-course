@@ -10,7 +10,7 @@ let arr: any[] = [1, true, "Hello"]; // array of any type
 // Tuple
 let person: [number, string, boolean] = [1, "Brain", true]; // tuple
 
-// Tuple Array
+// Tuple Array  - array of tuples
 let employee: [number, string][]; // array of tuples
 employee = [
   [1, "Brain"],
@@ -18,13 +18,13 @@ employee = [
   [3, "Jill"],
 ];
 
-// Union
+// Union - can be more than one type
 let pid: string | number;
 
 pid = "22";
 pid = 22;
 
-// Enum
+// Enum - set of named constants
 enum Direction1 {
   Up = 1,
   Down,
@@ -32,4 +32,13 @@ enum Direction1 {
   Right,
 }
 
-console.log(Direction1.Left);
+// console.log(Direction1.Left);
+
+enum Direction2 {
+  Up = "Up",
+  Down = "Down",
+  Left = "Left",
+  Right = "Right",
+}
+
+// console.log(Direction2.Left);
